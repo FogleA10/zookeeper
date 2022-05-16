@@ -14,17 +14,10 @@ const app = express();
 
 
 
-
-
-
-
-
-
-
-
-
 app.get('/api/animals', (req, res) => {
-    res.send('Hello!');
+    let results = animals;
+    console.log(req.query)
+    res.json(results);
   });
 
 //the end
